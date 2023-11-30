@@ -1,0 +1,148 @@
+:root{
+    --blue:#0D1282;
+    --yellow:#F0DE36;
+    --red:#D71313;
+    --white:#EEEDED;
+}
+body,h2{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.landing{
+    background-image: url('../SpicyHut/assets/img.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--white);
+}
+header{
+    display: flex;
+    padding: 1em;
+    flex-wrap: wrap;
+    row-gap: 1em;
+}
+header a{
+    text-decoration: none;
+    color:black;
+    padding: 1em;
+    min-width: 120px;
+}
+#logo{
+    flex:3;
+    font-size: 1.25em;
+}
+nav{
+    flex:2;
+    display: flex;
+}
+nav a {
+    flex:1;
+   
+}
+nav a:hover{
+    color: var(--blue);
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content:center ;
+    padding: 2em;
+   
+}
+.tagline1{
+    color:var(--blue);
+    font-size:2.5em ;
+    font-weight: bolder;
+}
+.tagline2{
+    color:black;
+}
+.maintext div{
+    margin: 0.75em;
+}
+.maintext button{
+    width: 20vw;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: .75em;
+    background-color: #F0DE36;
+    color: var(--blue);
+}
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    background-color:var(--yellow);
+    font-size: 1.25em;
+    color: #D71313;
+}
+#locheading,#menuheading{
+    background-color:var(--yellow);
+    font-size: 2.5em;
+    color: var(--blue);
+    display: flex;
+    justify-content: center;
+}
+.menu th{
+    color: var(--red);
+    font-size: 1.8em;
+}
+table{
+    width: 100%;
+    padding: 2em;
+}
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+}
+.menu td:nth-child(1){
+    flex:1;
+    justify-self: left;
+}
+.menu td:nth-child(2){
+    justify-self: right;
+}
+.maincourse{
+    grid-row-span: 2;
+}
+.locations{
+    background-color: #D71313;
+    color: yellow;
+    display: flex;
+    flex-wrap: wrap;
+}
+.locations h2{
+    color: green;
+    margin-bottom: 0.8em;
+}
+.locations div{
+    flex:1;
+    padding: 1em;
+    min-width: 220px;
+}
+footer{
+    background-color: white;
+    padding: 0.25em 1em;
+}
+header i,nav a i{
+margin-right: 0.5em;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 0.5em 2.5em;
+}
+.socialmedia{
+    padding: 0.5em;
+    border: 0.5em;
+    height: 1em;
+    width: 1em;
+   
+
+}
+.socialmedia :hover{
+    background-color:yellow;
+}
+
+
